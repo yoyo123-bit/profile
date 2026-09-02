@@ -10,14 +10,21 @@
 <body>
     <header>
         <h1>m.imani nur hakiki</h1>
-        <p>saya seorang murid MAN 3 Tulungagung yang sedang belajar Rekayasa Perangkat Lunak (RPL).</p>
-        <img src="harimau-cina-selatan.jpg" alt="photo profile">
+        <p>
+            saya seorang murid MAN 3 Tulungagung yang sedang belajar Rekayasa Perangkat Lunak (RPL).
+        </p>
     </header>
+
+    <div class="Profile">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDnJXrdOpNCGP8jAfBThGxVtw2-t2CH1OLXeFiqiQaDA&s=100" alt="photo of muhammad imani nur hakiki" class="profile-photo">
+
+    </div>
 
     <section>
         <h2>hobi</h2>
         <ul>
-            <li>Membaca buku</li>
+            <li>Membaca buku</li> 
             <li>Menonton film</li>
             <li>Bermain game</li>
         </ul>
@@ -27,6 +34,53 @@
         <h2>media sosial</h2>
         <a href="#">Instagram</a>
         <a href="#">TikTok</a>
+    </section>
+    <!-- form kontak -->
+    <section>
+        <h2>kontak</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <!-- jadwal pelajaran-->
+    <section>
+        <h2>jadwal pelajaran</h2>
+        <table border="1">
+            <tr>
+                <th>Hari</th>
+                <th>Pelajaran</th>
+            </tr>
+            <tr>
+                <td>Senin</td>
+                <td>sosiologi,bahasa inggris,biologi,ski,informatika,akidah akhlak</td>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td>penjas,kimia,matematika,sejarah,pancasila,bahasa indonesia</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>alquran hadist,matematika TKA,bahasa arab,RPL</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>fiqih,fisika,matematika,ekonomi,bahasa arab</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>geografi,koding,bahasa indonesia,seni budaya,bahasa inggris</td>
+            </tr>
+        </table>
     </section>
 </body>
 </html>
