@@ -219,7 +219,7 @@ body {
 }
 
 /* TABLET */
-@media screen and (max-width: 768px) {
+ screen and (max-width: 768px) {
   .page {
     margin: 15px auto;
     padding: 12px;
@@ -249,7 +249,7 @@ body {
   }
 
 /* HP */
-@media (max-width: 480px) {
+(max-width: 480px) {
   body {
     padding: 5px;
   }
