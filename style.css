@@ -78,6 +78,220 @@ body {
 }
 
 
+/* ===== PERBAIKAN LAYOUT WEBSITE ===== */
+
+body {
+  background: linear-gradient(135deg, #087f9e, #0e91ad, #38a5bb);
+  padding: 12px;
+}
+
+/* CONTAINER */
+.page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+/* PROFIL */
+.hero {
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+/* KONTEN */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+/* CARD */
+.content-grid section {
+  background: rgba(255, 255, 255, 0.94);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* JUDUL */
+.content-grid h2 {
+  margin-bottom: 15px;
+  color: #087da1;
+  font-size: 22px;
+  border-bottom: 2px solid #e2f1f6;
+  padding-bottom: 8px;
+}
+
+/* HOBI */
+.content-grid ul {
+  padding-left: 22px;
+}
+
+.content-grid li {
+  margin: 8px 0;
+}
+
+/* LINK */
+.content-grid a {
+  display: inline-block;
+  padding: 9px 14px;
+  margin: 4px;
+  background: #e7f5fa;
+  color: #087da1;
+  border-radius: 9px;
+  text-decoration: none;
+}
+
+.content-grid a:hover {
+  background: #087da1;
+  color: white;
+}
+
+/* FORM */
+.content-grid form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-grid input,
+.content-grid textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #d5e3ea;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.content-grid textarea {
+  min-height: 110px;
+}
+
+.content-grid input:focus,
+.content-grid textarea:focus {
+  outline: 2px solid #8bd0e5;
+  border-color: #087da1;
+}
+
+/* TOMBOL */
+.content-grid button,
+.content-grid input[type="submit"] {
+  background: #087da1;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* JADWAL */
+.content-grid .jadwal {
+  grid-column: 1 / -1;
+  overflow-x: auto;
+}
+
+.content-grid table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+
+.content-grid th {
+  background: #087da1;
+  color: white;
+}
+
+.content-grid th,
+.content-grid td {
+  padding: 12px;
+  border: 1px solid #d5e3ea;
+  text-align: left;
+}
+
+.content-grid tr:nth-child(even) {
+  background: #eff8fb;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .page {
+    margin: 15px auto;
+    padding: 12px;
+  }
+
+  .hero {
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .profile-photo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .judul-besar {
+    font-size: 2rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .content-grid .jadwal {
+    grid-column: auto;
+  }
+}
+
+/* HP */
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  .page {
+    padding: 8px;
+    margin: 10px auto;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .profile-photo {
+    width: 115px;
+    height: 115px;
+  }
+
+  .judul-besar {
+    font-size: 1.5rem;
+    overflow-wrap: anywhere;
+  }
+
+  #text2 {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .content-grid section {
+    padding: 17px;
+  }
+
+  .content-grid h2 {
+    font-size: 19px;
+  }
+}
+
+
 
 
 
