@@ -219,7 +219,7 @@ body {
 }
 
 /* TABLET */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .page {
     margin: 15px auto;
     padding: 12px;
@@ -247,7 +247,6 @@ body {
   .content-grid .jadwal {
     grid-column: auto;
   }
-}
 
 /* HP */
 @media (max-width: 480px) {
