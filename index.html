@@ -157,6 +157,35 @@
     background: #1a2a44;
     color: #38bdf8;
   }
+/* Efek sentuh / hover biar terasa hidup */
+.card:hover,
+body > div:hover,
+section:hover {
+  border-color: rgba(56, 189, 248, 0.45);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+ul li:hover,
+a:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+/* Tabel penuh ke kanan dan lebih nyaman dibaca */
+table {
+  display: table !important;
+  width: 100% !important;
+  overflow-x: visible !important;
+}
+
 </style>
 
 </head>
